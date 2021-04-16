@@ -47,21 +47,53 @@
 <div id="main">
 
     <div id="login">
-    <p id="text1">Додати прочитані книги</p>
+    <p id="text1">Додати улюблені книги</p>
     <p id="text2">Потрібно для того, щоб при подальшому використанні нашого застосунку, рекомендувались книги, які відповідають
         вашим вподобанням</p>
     <form>
 
-        <input id="name" type="text" name="name" placeholder="Введіть ім'я та прізвище автора" required>
-        <input id="bookName" type="text" name="bookName" placeholder="Введіть назву книги" required>
+        <div id="add">
+            <p class="newText">№1</p>
+        <input id="name_1" type="text" name="name" placeholder="Введіть ім'я та прізвище автора" required>
+        <input id="bookName_1" type="text" name="bookName" placeholder="Введіть назву книги" required>
 
-        <i class="bi bi-plus-circle"></i>
-
-        <a href="../afterLogin/afterLogin.html"><input id="next" type="button" name="submit" value="Готово"></a>
+        </div>
 
     </form>
+
+        <i class="bi bi-plus-circle" onclick='addNewFields()'></i>
+
+        <a href="../afterLogin/afterLogin.html"><input id="next" type="button" name="submit" value="Готово"></a>
     </div>
 
 </div>
+
+<script>
+    var addid = 1;
+    function addNewFields() {
+        if(document.getElementById('name_'+addid).value.length<1 ||document.getElementById('bookName_'+addid).value.length<1 ){
+          alert("Error");
+        }
+        else {
+            var addList = document.getElementById('add');
+            addid++;
+            var count = document.createElement('div');
+            count.innerHTML = "<p class='newText'>№" + addid + "</p>";
+            addList.insertAdjacentElement('beforeend', count);
+
+            var text = document.createElement('div');
+            var id1 = 'name_' + addid;
+            text.innerHTML = "<input id='" + id1+"' type='text' placeholder='Введіть ім`я та прізвище автора' value='' class='newElem' name='itemsAuthor[]' /> ";
+
+            addList.insertAdjacentElement('beforeend', text);
+
+            var text2 = document.createElement('div');
+            var id2 = 'bookName_' + addid;
+            text2.innerHTML = "<input id='" + id2 +"' type='text' placeholder='Введіть назву книги' value='' class='newElem' name='itemsName[]' /> ";
+
+            addList.insertAdjacentElement('beforeend', text2);
+        }
+    }
+</script>
 </body>
 </html>

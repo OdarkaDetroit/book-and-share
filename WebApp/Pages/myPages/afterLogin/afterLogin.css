@@ -55,6 +55,20 @@ body{
     color: #E1DAD4;
 }
 
+#IDName{
+    background: #E1DAD4;
+    font-family: 'Fira Code', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: center;
+    border: 1px solid #E1DAD4;
+    color: #2E1D1E;
+}
+
 #blockAboutUs:hover{
     background: #E1DAD4;
     border: 1px solid #E1DAD4;

@@ -112,6 +112,10 @@ body{
     gap: 10px;
 }
 
+input:focus{
+    outline: none;
+}
+
 #login{
 
     width:29.492vw ;
@@ -174,7 +178,28 @@ body{
     color: rgba(0, 0, 0, 0.4);
 }
 
-#name{
+.newElem{
+    width: 22.135vw;
+    height: 1.302vw;
+    margin-left: 3.687vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: 1.1vw;
+
+    font-family: 'Fira Code', monospace;
+    background-color: #EAEAEA;
+    border: 1px none rgba(0, 0, 0, 0.4);
+    border-bottom-style: solid;
+}
+
+.newText{
+    margin-left: 3.687vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    font-size: 1.1vw;
+    font-family: 'Fira Code', monospace;
+}
+#name_1{
     /*position: absolute;*/
     /*width: 340px;*/
     /*height: 20px;*/
@@ -184,8 +209,7 @@ body{
     width: 22.135vw;
     height: 1.302vw;
     margin-left: 3.687vw;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
     font-size: 1.1vw;
 
     font-family: 'Fira Code', monospace;
@@ -194,13 +218,13 @@ body{
     border-bottom-style: solid;
 }
 
-#bookName{
+#bookName_1{
     width: 22.135vw;
     height: 1.302vw;
     margin-left: 3.687vw;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    font-size: 1.3vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: 1.1vw;
 
     /*position: absolute;*/
     /*width: 340px;*/
