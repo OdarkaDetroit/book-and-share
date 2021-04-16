@@ -3,7 +3,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace WebApp.Models
 {
-    public class UsersBookshelf
+    public class UsersBookshell
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
