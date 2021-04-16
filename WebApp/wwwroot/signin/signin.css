@@ -130,6 +130,10 @@ body{
     gap: 10px;
 }
 
+input:focus {
+    outline: none;
+}
+
 #login{
 
     width: 20.117vw;
