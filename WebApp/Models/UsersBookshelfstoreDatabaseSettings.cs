@@ -2,14 +2,14 @@ namespace WebApp.Models
 {
     public class UsersBookshelfstoreDatabaseSettings : IUsersBookshelfstoreDatabaseSettings
     {
-        public string UserCollectionName { get; set; }
+        public string UsersBookshelfCollectionName { get; set; }
         public string ConnectionString { get; set; }
         public string DatabaseName { get; set; }
     }
 
     public interface IUsersBookshelfstoreDatabaseSettings
     {
-        string UserCollectionName { get; set; }
+        string UsersBookshelfCollectionName { get; set; }
         string ConnectionString { get; set; }
         string DatabaseName { get; set; }
     }

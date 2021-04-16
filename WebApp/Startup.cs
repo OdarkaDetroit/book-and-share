@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using WebApp.Models;
+using WebApp.Services;
 
 namespace WebApp
 {
@@ -33,7 +34,7 @@ namespace WebApp
 
             services.AddSingleton<IBookstoreDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<BookstoreDatabaseSettings>>().Value);
-            
+
 
             // UserstoreDatabaseSettings
             services.Configure<UserstoreDatabaseSettings>(
@@ -58,6 +59,13 @@ namespace WebApp
             services.AddSingleton<IUsersLikesstoreDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<UsersLikesstoreDatabaseSettings>>().Value);
 
+
+            services.AddSingleton<BookService>();
+            services.AddSingleton<UsersBookshellService>();
+            services.AddSingleton<UsersBooksLikesService>();
+            services.AddSingleton<UserService>();
+
+            services.AddControllers();
 
             services.AddRazorPages();
         }

@@ -9,7 +9,7 @@ namespace WebApp.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
 
-        [BsonElement("book")]
+        [BsonElement("Book")]
         public string BookTitle { get; set; }
 
         public string Author { get; set; }
