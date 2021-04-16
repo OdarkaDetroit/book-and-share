@@ -1,0 +1,113 @@
+html{
+    overflow-x: hidden;
+}
+body{
+    background: #E1DAD4 !important;
+}
+
+*:hover{
+    transition: all 0.2s;
+}
+
+*{
+    opacity: 95%;
+}
+
+.container-fluid{
+    display: flex;
+    gap: 10px !important;
+}
+
+#leftButtons{
+    display: flex;
+    gap: 10px !important;
+}
+#blockGolovna{
+    background: #2E1D1E;
+    font-family: 'Fira Code', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #2E1D1E;
+    color: #E1DAD4;
+}
+
+#blockGolovna:hover{
+    background: #E1DAD4;
+    border: 1px solid #E1DAD4;
+    color: #2E1D1E;
+}
+
+#blockAboutUs{
+    background: #2E1D1E;
+    font-family: 'Fira Code', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    border-radius: 5px;
+
+    text-align: center;
+    border: 1px solid #2E1D1E;
+    color: #E1DAD4;
+}
+
+#blockAboutUs:hover{
+    background: #E1DAD4;
+    border: 1px solid #E1DAD4;
+    color: #2E1D1E;
+}
+
+#blockContacts{
+    background: #2E1D1E;
+    font-family: 'Fira Code', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    border-radius: 5px;
+
+    text-align: center;
+    border: 1px solid #2E1D1E;
+    color: #E1DAD4;
+}
+
+#blockContacts:hover{
+    background: #E1DAD4;
+    border: 1px solid #E1DAD4;
+    color: #2E1D1E;
+}
+
+#headerMain{
+    background-color: #2E1D1E !important;
+}
+
+
+.social{
+    color: #E1DAD4;
+}
+
+.social:hover::before{
+    background-color: #E1DAD4;
+    color: #2E1D1E;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.bi-instagram:hover::before{
+    border-radius: 5px;
+}
+
+.contacts{
+    vertical-align: middle;
+    display: flex;
+    gap: 10px;
+}
+
+#rightButtons{
+    display: flex;
+    gap: 10px;
+}
