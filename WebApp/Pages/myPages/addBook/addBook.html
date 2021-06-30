@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <link rel="stylesheet" href="addBook.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <title>Відмітити книгу</title>
+</head>
+<body>
+<nav id="headerMain" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" style="background-color: #E1DAD4">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="leftButtons" class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a id="blockGolovna" class="nav-link active" aria-current="page" href="../main.html">Головна</a>
+                </li>
+
+                <li class="nav-item">
+                    <a id="blockAboutUs" class="nav-link active" aria-current="page" href="../aboutUs/aboutUs.html">Про нас</a>
+                </li>
+                <li class="nav-item">
+                    <a id="blockContacts" class="nav-link active" aria-current="page" href="../contacts/contacts.html">Контакти</a>
+                </li>
+            </ul>
+
+            <div id="rightButtons">
+                <div class="contacts">
+                    <a href="https://www.facebook.com/troshab"><i class="bi bi-facebook fs-3 social" ></i></a>
+                    <a href="https://www.instagram.com/trosha_b/"><i class="bi bi-instagram fs-3 social"></i></a>
+                    <a href="https://t.me/joinchat/AAAAAE171CtvXOHKuDAhRw"><i class="bi bi-telegram fs-3 social"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div id="main">
+
+    <div id="login">
+    <p id="text1">Відмітити книгу</p>
+    <form>
+<!--        <div id="blockCamera"></div>-->
+<!--        <img id="camera" src="../images/camera.png" alt="logo" width="">-->
+
+<!--        <input id="photo" type="file" name="image" placeholder="Додати фото місця, де залишили книгу" required>-->
+        <input id="name" type="text" name="name" placeholder="Введіть назву книги" required>
+        <input id="author" type="text" name="author" placeholder="Введіть автора книги" required>
+        <input id="location" type="text" name="location" placeholder="Геолокація" required>
+
+        <a href="../afterLogin/afterLogin.html"><input id="next" type="button" name="submit" value="Додати"></a>
+
+    </form>
+    </div>
+
+</div>
+</body>
+</html>
